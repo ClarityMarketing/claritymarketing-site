@@ -25,6 +25,9 @@ const path = require('path');
 const ROOT = __dirname;
 const TEMPLATES = path.join(ROOT, 'templates');
 const I18N = path.join(ROOT, 'i18n');
+const DIST = path.join(ROOT, 'dist');
+const STATIC_FILES = ['styles.css', 'script.js'];
+const STATIC_DIRS = ['assets'];
 
 const PAGES = [
   { template: 'index',   da: 'index.html',             en: 'en/index.html',         active: 'home' },
@@ -178,9 +181,32 @@ function render(tpl, ctx) {
   return out;
 }
 
+function copyDirSync(src, dest) {
+  fs.mkdirSync(dest, { recursive: true });
+  for (const entry of fs.readdirSync(src, { withFileTypes: true })) {
+    const s = path.join(src, entry.name);
+    const d = path.join(dest, entry.name);
+    if (entry.isDirectory()) copyDirSync(s, d);
+    else fs.copyFileSync(s, d);
+  }
+}
+
 function buildOnce() {
   const da = JSON.parse(fs.readFileSync(path.join(I18N, 'da.json'), 'utf-8'));
   const en = JSON.parse(fs.readFileSync(path.join(I18N, 'en.json'), 'utf-8'));
+
+  // Wipe + recreate dist/
+  fs.rmSync(DIST, { recursive: true, force: true });
+  fs.mkdirSync(DIST, { recursive: true });
+
+  // Copy static files
+  for (const f of STATIC_FILES) {
+    fs.copyFileSync(path.join(ROOT, f), path.join(DIST, f));
+  }
+  for (const d of STATIC_DIRS) {
+    const src = path.join(ROOT, d);
+    if (fs.existsSync(src)) copyDirSync(src, path.join(DIST, d));
+  }
 
   let count = 0;
   for (const page of PAGES) {
@@ -202,7 +228,7 @@ function buildOnce() {
       };
       const html = render(tpl, { t, url, active, lang });
 
-      const out = path.join(ROOT, lang === 'da' ? page.da : page.en);
+      const out = path.join(DIST, lang === 'da' ? page.da : page.en);
       fs.mkdirSync(path.dirname(out), { recursive: true });
       fs.writeFileSync(out, html);
       console.log(`✓ ${path.relative(ROOT, out)}`);
