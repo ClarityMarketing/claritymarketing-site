@@ -77,7 +77,7 @@ document.querySelectorAll('.stats__num[data-count]').forEach((c) => {
   });
 })();
 
-// ----- Calendly CTA popup (25s timer OR exit intent, once per browser) -----
+// ----- Calendly CTA popup (9s timer, once per browser) -----
 (function ctaPopup() {
   const popup = document.getElementById('ctaPopup');
   if (!popup) return;
@@ -127,17 +127,8 @@ document.querySelectorAll('.stats__num[data-count]').forEach((c) => {
     }
   }
 
-  // Timer trigger
-  const timer = setTimeout(open, 25000);
-
-  // Exit-intent trigger (desktop only — mouseleave doesn't fire on touch)
-  const onMouseOut = (e) => {
-    if (e.clientY <= 0 || e.relatedTarget == null) {
-      clearTimeout(timer);
-      open();
-    }
-  };
-  document.addEventListener('mouseout', onMouseOut);
+  // Timer trigger (9s after page load)
+  setTimeout(open, 9000);
 
   // Close handlers
   popup.addEventListener('click', (e) => {
