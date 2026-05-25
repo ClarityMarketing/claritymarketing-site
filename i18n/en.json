@@ -17,9 +17,15 @@
   },
   "cta_popup": {
     "eyebrow": "Ready to grow?",
-    "title": "Book a free consultation",
-    "p": "Pick a time that works for you — free and no commitment.",
-    "close_label": "Close"
+    "title": "Send us a message — we reply fast",
+    "p": "Drop us a quick note and we'll get back to you the same day.",
+    "close_label": "Close",
+    "form_name": "Your name",
+    "form_email": "Your email",
+    "form_message": "How can we help?",
+    "form_submit": "Send message",
+    "form_success": "Thanks! We'll be in touch shortly.",
+    "or_book": "Or pick a time directly in the calendar:"
   },
   "footer": {
     "brand": "Clarity Marketing",

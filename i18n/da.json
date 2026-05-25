@@ -17,9 +17,15 @@
   },
   "cta_popup": {
     "eyebrow": "Klar til at vækste?",
-    "title": "Book en gratis samtale",
-    "p": "Vælg et tidspunkt der passer dig – uforpligtende og uden binding.",
-    "close_label": "Luk"
+    "title": "Skriv til os – vi svarer hurtigt",
+    "p": "Send en kort besked, så vender vi tilbage samme dag.",
+    "close_label": "Luk",
+    "form_name": "Dit navn",
+    "form_email": "Din email",
+    "form_message": "Hvad kan vi hjælpe med?",
+    "form_submit": "Send besked",
+    "form_success": "Tak! Vi vender tilbage til dig hurtigst muligt.",
+    "or_book": "Eller vælg et tidspunkt direkte i kalenderen:"
   },
   "footer": {
     "brand": "Clarity Marketing",

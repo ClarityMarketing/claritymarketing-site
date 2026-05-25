@@ -137,4 +137,33 @@ document.querySelectorAll('.stats__num[data-count]').forEach((c) => {
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && shown) close();
   });
+
+  // Contact form: AJAX submit to Formspree, show success inline
+  const form = popup.querySelector('#ctaPopupForm');
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const success = form.querySelector('.cta-popup__success');
+      const submit = form.querySelector('.cta-popup__submit');
+      if (submit) { submit.disabled = true; submit.style.opacity = '0.6'; }
+      try {
+        const data = new FormData(form);
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          form.querySelectorAll('input, textarea, button').forEach((el) => el.style.display = 'none');
+          if (success) success.hidden = false;
+        } else {
+          if (submit) { submit.disabled = false; submit.style.opacity = ''; }
+          alert('Noget gik galt. Prøv venligst igen, eller skriv direkte til ella@claritymarketing.dk');
+        }
+      } catch (err) {
+        if (submit) { submit.disabled = false; submit.style.opacity = ''; }
+        alert('Noget gik galt. Prøv venligst igen, eller skriv direkte til ella@claritymarketing.dk');
+      }
+    });
+  }
 })();

@@ -7,6 +7,17 @@
       <h3 class="cta-popup__title" id="ctaPopupTitle">{{t.cta_popup.title}}</h3>
       <p class="cta-popup__p">{{t.cta_popup.p}}</p>
     </div>
+
+    <form class="cta-popup__form" id="ctaPopupForm" action="https://formspree.io/f/REPLACE_WITH_FORMSPREE_ID" method="POST">
+      <input type="text" name="name" placeholder="{{t.cta_popup.form_name}}" required />
+      <input type="email" name="email" placeholder="{{t.cta_popup.form_email}}" required />
+      <textarea name="message" placeholder="{{t.cta_popup.form_message}}" rows="3" required></textarea>
+      <button type="submit" class="btn btn--dark cta-popup__submit">{{t.cta_popup.form_submit}}</button>
+      <p class="cta-popup__success" hidden>{{t.cta_popup.form_success}}</p>
+    </form>
+
+    <div class="cta-popup__or">{{t.cta_popup.or_book}}</div>
+
     <div class="cta-popup__calendly"
          data-calendly-url="https://calendly.com/ella-claritymarketing/30min?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=5a4a3a&background_color=faf6f0&text_color=1a1612"></div>
   </div>

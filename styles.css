@@ -1374,14 +1374,72 @@ h1, h2, h3 { margin: 0; }
   font-size: 14px;
   color: var(--muted);
 }
+.cta-popup__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px 28px 24px;
+}
+.cta-popup__form input,
+.cta-popup__form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid rgba(26,22,18,0.18);
+  border-radius: 10px;
+  font: inherit;
+  font-size: 15px;
+  background: #fff;
+  color: var(--ink);
+  transition: border-color .15s ease, box-shadow .15s ease;
+}
+.cta-popup__form input:focus,
+.cta-popup__form textarea:focus {
+  outline: 0;
+  border-color: var(--cocoa, #5a4a3a);
+  box-shadow: 0 0 0 3px rgba(90,74,58,0.12);
+}
+.cta-popup__form textarea { resize: vertical; min-height: 80px; }
+.cta-popup__submit {
+  margin-top: 4px;
+  width: 100%;
+  justify-content: center;
+}
+.cta-popup__success {
+  margin: 8px 0 0;
+  padding: 12px 14px;
+  background: #ecf3ec;
+  border-radius: 10px;
+  color: #1f4d1f;
+  font-size: 14px;
+  text-align: center;
+}
+.cta-popup__or {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 0 28px 12px;
+  position: relative;
+}
+.cta-popup__or::before,
+.cta-popup__or::after {
+  content: '';
+  display: inline-block;
+  width: 40px;
+  height: 1px;
+  background: rgba(26,22,18,0.18);
+  vertical-align: middle;
+  margin: 0 10px;
+}
 .cta-popup__calendly {
-  min-height: 560px;
+  min-height: 480px;
   overflow: hidden;
   padding: 0 12px 12px;
 }
 .cta-popup__calendly .calendly-inline-widget {
   min-width: 100% !important;
-  height: 560px !important;
+  height: 480px !important;
 }
 @media (max-width: 600px) {
   .cookie-banner { left: 10px; right: 10px; bottom: 10px; padding: 14px 16px; }
@@ -1390,7 +1448,9 @@ h1, h2, h3 { margin: 0; }
   .cta-popup { padding: 10px; }
   .cta-popup__panel { max-height: 96vh; border-radius: 16px; }
   .cta-popup__copy { padding: 22px 18px 8px; }
-  .cta-popup__calendly { min-height: 480px; padding: 0 6px 6px; }
-  .cta-popup__calendly .calendly-inline-widget { height: 480px !important; }
+  .cta-popup__form { padding: 12px 18px 18px; }
+  .cta-popup__or { padding: 0 18px 10px; }
+  .cta-popup__calendly { min-height: 420px; padding: 0 6px 6px; }
+  .cta-popup__calendly .calendly-inline-widget { height: 420px !important; }
 }
 
