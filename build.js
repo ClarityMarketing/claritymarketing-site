@@ -29,6 +29,13 @@ const DIST = path.join(ROOT, 'dist');
 const STATIC_FILES = ['styles.css', 'script.js'];
 const STATIC_DIRS = ['assets'];
 
+// Sanity CMS — public read API for testimonials (and future content types)
+const SANITY = {
+  projectId: process.env.SANITY_PROJECT_ID || 'x97ym5fy',
+  dataset: process.env.SANITY_DATASET || 'production',
+  apiVersion: '2024-01-01'
+};
+
 const PAGES = [
   { template: 'index',   da: 'index.html',             en: 'en/index.html',         active: 'home' },
   { template: 'service', da: 'service.html',           en: 'en/service.html',       active: 'service' },
@@ -191,9 +198,44 @@ function copyDirSync(src, dest) {
   }
 }
 
-function buildOnce() {
+async function fetchSanity(query) {
+  const url = `https://${SANITY.projectId}.apicdn.sanity.io/v${SANITY.apiVersion}/data/query/${SANITY.dataset}?query=${encodeURIComponent(query)}`;
+  try {
+    const res = await fetch(url);
+    if (!res.ok) {
+      console.warn(`! Sanity fetch ${res.status}: ${res.statusText}`);
+      return [];
+    }
+    const json = await res.json();
+    return json.result || [];
+  } catch (e) {
+    console.warn(`! Sanity fetch error: ${e.message}`);
+    return [];
+  }
+}
+
+function applyTestimonials(t, lang, docs) {
+  if (!docs.length) return t; // keep static fallback if Sanity is empty
+  const featured = docs.filter((d) => d.featured !== false);
+  const mapped = featured.map((d) => ({
+    quote: lang === 'en' ? (d.quoteEn || d.quoteDa) : d.quoteDa,
+    name: d.name,
+    role: lang === 'en' ? (d.roleEn || d.roleDa || '') : (d.roleDa || '')
+  }));
+  return { ...t, home: { ...t.home, testimonials: mapped } };
+}
+
+async function buildOnce() {
   const da = JSON.parse(fs.readFileSync(path.join(I18N, 'da.json'), 'utf-8'));
   const en = JSON.parse(fs.readFileSync(path.join(I18N, 'en.json'), 'utf-8'));
+
+  // Pull editable content from Sanity (testimonials for now; more types later)
+  const testimonials = await fetchSanity(
+    `*[_type == "testimonial"] | order(order asc, _createdAt asc) {
+      _id, name, roleDa, roleEn, quoteDa, quoteEn, featured, order
+    }`
+  );
+  console.log(`✓ Sanity: ${testimonials.length} testimonial(s)`);
 
   // Wipe + recreate dist/
   fs.rmSync(DIST, { recursive: true, force: true });
@@ -218,7 +260,8 @@ function buildOnce() {
     const tpl = fs.readFileSync(tplPath, 'utf-8');
 
     for (const lang of ['da', 'en']) {
-      const t = lang === 'da' ? da : en;
+      let t = lang === 'da' ? da : en;
+      t = applyTestimonials(t, lang, testimonials);
       const url = urlsFor(lang, page);
       const active = {
         home:    page.active === 'home'    ? 'active' : '',
@@ -239,16 +282,16 @@ function buildOnce() {
 }
 
 function watch() {
-  buildOnce();
+  buildOnce().catch((e) => console.error(e));
   console.log('\nWatching templates/ and i18n/ ... (Ctrl+C to stop)');
   let pending = false;
   const trigger = () => {
     if (pending) return;
     pending = true;
-    setTimeout(() => {
+    setTimeout(async () => {
       pending = false;
       console.log('\n--- rebuild ---');
-      try { buildOnce(); } catch (e) { console.error(e); }
+      try { await buildOnce(); } catch (e) { console.error(e); }
     }, 80);
   };
   fs.watch(TEMPLATES, { recursive: true }, trigger);
@@ -258,5 +301,5 @@ function watch() {
 if (process.argv.includes('--watch')) {
   watch();
 } else {
-  buildOnce();
+  buildOnce().catch((e) => { console.error(e); process.exit(1); });
 }
