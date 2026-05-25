@@ -47,14 +47,16 @@ function urlsFor(lang, page) {
   const isEn = lang === 'en';
   const pre = isEn ? '../' : '';
   // Path from current page's location to the other language's equivalent page
+  // (strip .html so the URL bar stays clean; Vercel cleanUrls handles routing)
+  const stripHtml = (s) => s.replace(/\.html$/, '').replace(/\/index$/, '/');
   const otherPath = isEn
-    ? path.relative(path.dirname(page.en), page.da)
-    : path.join('en', path.basename(page.en));
+    ? stripHtml(path.relative(path.dirname(page.en), page.da))
+    : stripHtml(path.join('en', path.basename(page.en)));
   return {
-    home:    isEn ? 'index.html'        : 'index.html',
-    service: isEn ? 'service.html'      : 'service.html',
-    contact: isEn ? 'contact-us.html'   : 'kontakt-os.html',
-    work:    isEn ? 'previous-work.html': 'tidligere-arbejde.html',
+    home:    isEn ? './'             : './',
+    service: isEn ? 'service'        : 'service',
+    contact: isEn ? 'contact-us'     : 'kontakt-os',
+    work:    isEn ? 'previous-work'  : 'tidligere-arbejde',
     assets:  pre + 'assets/',
     styles:  pre + 'styles.css',
     script:  pre + 'script.js',
