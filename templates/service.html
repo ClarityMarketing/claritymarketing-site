@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="{{t.html_lang}}">
+<head>
+  <title>{{t.service.title}}</title>
+  <meta name="description" content="{{t.service.description}}" />
+  {{> head}}
+</head>
+<body>
+
+  {{> marquee}}
+  {{> header}}
+
+  <section class="page-hero page-hero--service page-hero--video reveal">
+    <video class="page-hero__bg" autoplay muted loop playsinline poster="{{url.assets}}hero.jpg">
+      <source src="{{url.assets}}hero-silk.mp4" type="video/mp4" />
+    </video>
+    <div class="page-hero__veil"></div>
+    <div class="page-hero__inner">
+      <div class="page-hero__eyebrow">{{t.service.eyebrow}}</div>
+      <h1>{{t.service.hero_title}}</h1>
+      <p>{{t.service.hero_p}}</p>
+    </div>
+  </section>
+
+  <div class="section-divider" aria-hidden="true"><span></span><span></span><span></span></div>
+
+  <section class="service-blocks">
+    {{#each t.service.blocks}}
+      <article class="service-block reveal">
+        <span class="service-block__ghost" aria-hidden="true">{{.num}}</span>
+        <div class="service-block__head">
+          <span class="service-block__num">{{.num}}</span>
+          <h2>{{.title}}</h2>
+        </div>
+        <div class="service-block__grid">
+          <div class="service-block__desc">
+            {{#each .desc}}
+              <p>{{.}}</p>
+            {{/each}}
+          </div>
+          <div class="service-block__list">
+            <div class="service-block__list-label">{{.list_label}}</div>
+            <ul>
+              {{#each .list}}
+                <li>{{.}}</li>
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+      </article>
+      {{#if .featured}}
+        <aside class="featured-result reveal">
+          <div class="featured-result__stat">
+            <span class="featured-result__num">{{.featured.stat}}</span>
+            <span class="featured-result__label">{{.featured.label}}</span>
+          </div>
+          <div class="featured-result__quote">
+            <p>{{.featured.quote}}</p>
+            <div class="featured-result__person">— {{.featured.person}}</div>
+          </div>
+        </aside>
+      {{/if}}
+    {{/each}}
+  </section>
+
+  <div class="section-divider" aria-hidden="true"><span></span><span></span><span></span></div>
+
+  <section class="values reveal">
+    <h2 class="values__title">{{t.service.values_title}}</h2>
+    <div class="values__grid">
+      {{#each t.service.values}}
+        <div class="value">
+          <div class="value__icon" aria-hidden="true">
+            {{#if .icon_growth}}<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 36 L18 24 L26 30 L42 12"/><path d="M30 12 H42 V24"/><circle cx="6" cy="36" r="1.5" fill="currentColor"/><circle cx="18" cy="24" r="1.5" fill="currentColor"/><circle cx="26" cy="30" r="1.5" fill="currentColor"/></svg>{{/if}}
+            {{#if .icon_spark}}<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6 L27 21 L42 24 L27 27 L24 42 L21 27 L6 24 L21 21 Z"/><circle cx="38" cy="10" r="1.5" fill="currentColor"/><circle cx="10" cy="38" r="1.5" fill="currentColor"/></svg>{{/if}}
+            {{#if .icon_target}}<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18"/><circle cx="24" cy="24" r="11"/><circle cx="24" cy="24" r="4" fill="currentColor"/><path d="M24 2 V8 M24 40 V46 M2 24 H8 M40 24 H46"/></svg>{{/if}}
+          </div>
+          <h3>{{.title}}</h3>
+          <p>{{.body}}</p>
+        </div>
+      {{/each}}
+    </div>
+  </section>
+
+  <div class="section-divider" aria-hidden="true"><span></span><span></span><span></span></div>
+
+  <section class="faq reveal">
+    <h2 class="faq__title">{{t.service.faq_title}}</h2>
+    <div class="faq__list">
+      {{#each t.service.faq}}
+        <details class="faq__item">
+          <summary>{{.q}}</summary>
+          {{#each .a}}<p>{{.}}</p>{{/each}}
+          {{#if .list}}
+            <ul>{{#each .list}}<li>{{.}}</li>{{/each}}</ul>
+          {{/if}}
+          {{#if .a_after}}
+            {{#each .a_after}}<p>{{.}}</p>{{/each}}
+          {{/if}}
+        </details>
+      {{/each}}
+    </div>
+  </section>
+
+  <section class="cta-banner reveal">
+    <div class="cta-banner__inner">
+      <div>
+        <div class="cta-banner__eyebrow">{{t.service.cta_eyebrow}}</div>
+        <h2>{{t.service.cta_title}}</h2>
+      </div>
+      <div class="cta-banner__actions">
+        <a href="{{url.contact}}" class="btn btn--dark">{{t.service.cta_primary}}</a>
+        <a href="{{url.home}}" class="btn btn--ghost">{{t.service.cta_secondary}}</a>
+      </div>
+    </div>
+  </section>
+
+  {{> footer}}
+
+  <script src="{{url.script}}"></script>
+</body>
+</html>

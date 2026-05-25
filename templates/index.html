@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="{{t.html_lang}}">
+<head>
+  <title>{{t.home.title}}</title>
+  <meta name="description" content="{{t.home.description}}" />
+  {{> head}}
+</head>
+<body>
+
+  {{> marquee}}
+  {{> header}}
+
+  <!-- Hero with video background -->
+  <section class="hero-video">
+    <video class="hero-video__bg" autoplay muted loop playsinline poster="{{url.assets}}hero.jpg">
+      <source src="{{url.assets}}hero-silk.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-video__overlay"></div>
+    <div class="hero-video__content">
+      <p class="hero-video__tagline reveal">{{t.home.hero_tagline}}</p>
+      <a href="{{url.contact}}" class="btn btn--light reveal">{{t.home.hero_cta}}</a>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats reveal">
+    <h2 class="stats__heading">{{t.home.stats_heading}}</h2>
+    <div class="stats__grid">
+      {{#each t.home.stats}}
+        <div class="stats__item">
+          <div class="stats__num" data-count="{{.num}}">{{.num}}%</div>
+          <div class="stats__label">{{.label}}</div>
+        </div>
+      {{/each}}
+    </div>
+  </section>
+
+  <!-- Beige editorial section: brushstroke heading + body -->
+  <section class="editorial">
+    <div class="editorial__inner">
+      <div class="editorial__heading reveal">
+        <h2>
+          <span class="brushstroke">
+            <svg viewBox="0 0 240 90" preserveAspectRatio="none" aria-hidden="true">
+              <path d="M6,58 C50,18 130,72 234,38" fill="none" stroke="rgba(180,150,120,0.55)" stroke-width="44" stroke-linecap="round" />
+            </svg>
+            <span class="brushstroke__word">{{t.home.glass_title_lead}}</span>
+          </span>
+          {{t.home.glass_title_rest}}
+        </h2>
+      </div>
+      <div class="editorial__body reveal">
+        <p>{{t.home.glass_p1}}</p>
+        <p>{{t.home.glass_p2}}</p>
+        <a href="{{url.service}}" class="btn btn--dark">{{t.home.glass_cta}}</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest projects (case) -->
+  <section class="projects">
+    <h2 class="projects__title reveal">{{t.home.projects_title}}</h2>
+    <div class="projects__grid reveal">
+      <div class="projects__visual">
+        <img src="{{url.assets}}sams-composite.png" alt="Sams Indeklima portfolio" />
+      </div>
+      <div class="projects__copy">
+        <h3>{{t.home.case_title}}</h3>
+      </div>
+    </div>
+    <div class="projects__quote reveal">
+      <div class="projects__stars" aria-label="5/5">★ ★ ★ ★ ★</div>
+      <p>{{t.home.case_quote}}</p>
+      <div class="projects__person">
+        <img src="{{url.assets}}morten.jpg" alt="" />
+        <div>
+          <div class="projects__name">{{t.home.case_person_name}}</div>
+          <div class="projects__role">{{t.home.case_person_role}}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services preview -->
+  <section class="services reveal">
+    <h2 class="services__title">{{t.home.services_title}}</h2>
+    <div class="services__list">
+      {{#each t.home.services}}
+        <div class="service">
+          <div class="service__icon"><img src="{{url.assets}}{{.icon}}" alt="" /></div>
+          <div class="service__body">
+            <h3>{{.title}}</h3>
+            <p>{{.body}}</p>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+    <div class="services__cta">
+      <a href="{{url.service}}" class="btn btn--dark">{{t.home.services_cta}}</a>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2 class="testimonials__title reveal">{{t.home.testimonials_title}}</h2>
+    <div class="testimonials__grid">
+      {{#each t.home.testimonials}}
+        <div class="testimonial reveal">
+          <p>{{.quote}}</p>
+          <div class="testimonial__author">{{.name}}, {{.role}}</div>
+        </div>
+      {{/each}}
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="bottom-cta reveal">
+    <div class="bottom-cta__image" style="background-image:url('{{url.assets}}cushion.jpg');"></div>
+    <div class="bottom-cta__copy">
+      <h2>{{t.home.bottom_cta_title}}</h2>
+      <div class="bottom-cta__dots"><span></span><span></span><span></span></div>
+      <a href="{{url.contact}}" class="btn btn--dark">{{t.home.bottom_cta_btn}}</a>
+    </div>
+  </section>
+
+  {{> footer}}
+
+  <script src="{{url.script}}"></script>
+</body>
+</html>

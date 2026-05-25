@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="{{t.html_lang}}">
+<head>
+  <title>{{t.contact.title}}</title>
+  <meta name="description" content="{{t.contact.description}}" />
+  {{> head}}
+</head>
+<body>
+
+  {{> marquee}}
+  {{> header}}
+
+  <section class="page-hero reveal">
+    <h1>{{t.contact.hero_title}}</h1>
+    <p>{{t.contact.hero_p}}</p>
+  </section>
+
+  <section class="calendly reveal">
+    <h2 class="calendly__title">{{t.contact.calendly_title}}</h2>
+    <p class="calendly__p">{{t.contact.calendly_p}}</p>
+    <div class="calendly-inline-widget"
+         data-url="https://calendly.com/ella-claritymarketing/30min?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=5a4a3a&background_color=faf6f0&text_color=1a1612"
+         style="min-width:320px;height:720px;"></div>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  </section>
+
+  <section class="contact reveal">
+    <h2 class="contact__title">{{t.contact.form_title}}</h2>
+    <p class="contact__p">{{t.contact.form_p}}</p>
+    <form class="contact__form" action="https://formspree.io/f/REPLACE_WITH_YOUR_ID" method="POST" novalidate>
+      <label class="field">
+        <span>{{t.contact.form.name}} <em>({{t.contact.form.required}})</em> <span class="req">*</span></span>
+        <input type="text" name="name" required />
+      </label>
+
+      <label class="field">
+        <span>{{t.contact.form.company}} <em>({{t.contact.form.required}})</em> <span class="req">*</span></span>
+        <input type="text" name="company" required />
+      </label>
+
+      <label class="field">
+        <span>{{t.contact.form.email}} <em>({{t.contact.form.required}})</em> <span class="req">*</span></span>
+        <input type="email" name="_replyto" required />
+      </label>
+
+      <label class="field">
+        <span>{{t.contact.form.website}} <em>({{t.contact.form.required}})</em> <span class="req">*</span></span>
+        <input type="url" name="website" placeholder="https://" required />
+      </label>
+
+      <label class="field">
+        <span>{{t.contact.form.message}} <span class="req">*</span></span>
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+
+      <button type="submit" class="btn btn--dark">{{t.contact.form.submit}}</button>
+    </form>
+  </section>
+
+  {{> footer}}
+
+  <script src="{{url.script}}"></script>
+</body>
+</html>

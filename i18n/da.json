@@ -1,0 +1,198 @@
+{
+  "html_lang": "da",
+  "lang_toggle_label": "🇬🇧 English",
+  "nav": {
+    "home": "Hjem",
+    "service": "Service",
+    "contact": "Kontakt os",
+    "work": "Tidligere Arbejde"
+  },
+  "marquee": ["Bliv set", "Bliv husket", "Skab vækst"],
+  "cookie": {
+    "text": "Vi bruger cookies for at forbedre din oplevelse på sitet.",
+    "accept": "Accepter",
+    "decline": "Afvis",
+    "policy_label": "Læs mere",
+    "policy_url": "#"
+  },
+  "cta_popup": {
+    "eyebrow": "Klar til at vækste?",
+    "title": "Book en gratis samtale",
+    "p": "Vælg et tidspunkt der passer dig – uforpligtende og uden binding.",
+    "close_label": "Luk"
+  },
+  "footer": {
+    "brand": "Clarity Marketing",
+    "hours_title": "Åbningstider",
+    "hours": [
+      { "day": "Mandag – Torsdag", "time": "8 – 18" },
+      { "day": "Fredag", "time": "8 – 16" },
+      { "day": "Weekend", "time": "Lukket" }
+    ],
+    "follow_title": "Følg os",
+    "email": "Kontakt@claritymarketing.dk",
+    "phone_label": "Tel",
+    "phone": "+45 26 85 40 06",
+    "tagline": "Bliv set. Bliv husket. Skab vækst.",
+    "rights": "Alle rettigheder forbeholdes.",
+    "made_in": "Designet i København"
+  },
+  "home": {
+    "title": "Clarity Marketing — Bliv set. Bliv husket. Skab vækst.",
+    "description": "Clarity Marketing er en strategisk samarbejdspartner, der hjælper ambitiøse brands med at vækste gennem moderne marketing, SEO, Google Ads og AI-værktøjer.",
+    "hero_line_1": "Bliv set",
+    "hero_line_2": "Bliv husket",
+    "hero_line_3": "Skab vækst",
+    "hero_tagline": "Vi hjælper med at vækste dit brand gennem high-performing digital markedsføring",
+    "hero_cta": "Book en tid",
+    "stats_heading": "Vores tidligere arbejde",
+    "stats": [
+      { "num": 38, "label": "Omsætningsvækst" },
+      { "num": 68, "label": "Kvalificerede<br />inbound leads" },
+      { "num": 40, "label": "Flere månedlige<br />henvendelser" }
+    ],
+    "glass_title_lead": "Skab",
+    "glass_title_rest": "bæredygtig vækst og fuld gennemsigtighed med Clarity Marketing",
+    "glass_p1": "Hos Clarity Marketing tror vi på, at den bedste digitale vækst skabes gennem innovation, erfaring og tæt samarbejde. Vi gør det komplekse enkelt, så I kan træffe bedre beslutninger og få mere ud af jeres marketingbudget.",
+    "glass_p2": "Vores fokus er ikke kun på klik og trafik, men på målbare resultater, stærkere ROI og strategisk vækst, der skaber reel værdi.",
+    "glass_cta": "Læs mere",
+    "projects_title": "Seneste projekter",
+    "case_title": "Hvordan 100+ kvalificerede leads skabte vækst for Sams Indeklima på tværs af deres digitale platforme.",
+    "case_quote": "At arbejde sammen med Clarity Marketing har været en fantastisk oplevelse. De har transformeret vores hjemmeside og styrket vores synlighed gennem SEO, Google Ads og sociale medier, hvilket har skabt en platform, der afspejler vores mission og brand langt bedre. Siden samarbejdets start har vi oplevet en markant stigning i bookingforespørgsler og fået over 100 nye leads gennem hjemmesiden.",
+    "case_person_name": "Morten Nielsen",
+    "case_person_role": "CEO of Sams Indeklima",
+    "services_title": "Sådan skaber vi vækst for brands",
+    "services": [
+      {
+        "title": "Hjemmeside og SEO",
+        "body": "Vi udvikler moderne, konverteringsoptimerede hjemmesider og strategiske SEO løsninger, der hjælper virksomheder med at blive fundet på Google og omdanne besøgende til kunder. Fokus er ikke kun på design, men på synlighed, performance og målbar vækst.",
+        "icon": "icon-web.jpg"
+      },
+      {
+        "title": "Social Media Marketing",
+        "body": "Vi hjælper virksomheder med at opbygge en stærk professionel engagement og et brand folk husker.",
+        "icon": "icon-social.jpg"
+      },
+      {
+        "title": "Google Ads",
+        "body": "Vi skaber datadrevne Google Ads kampagner med fokus på kvalificerede leads, flere bookinger og højere ROI. Gennem løbende optimering sikrer vi, at jeres annoncebudget bliver investeret dér, hvor det skaber størst værdi.",
+        "icon": "icon-ads.jpg"
+      },
+      {
+        "title": "Generative Engine Optimization",
+        "body": "Vi arbejder med GEO (Generative Engine Optimization) for at sikre at jeres virksomhed bliver synlig i fremtidens AI-drevne søgninger. Ved at optimere indhold, struktur og autoritet hjælper vi virksomheder med at blive fundet gennem både søgemaskiner og AI-platforme.",
+        "icon": "icon-geo.jpg"
+      }
+    ],
+    "services_cta": "Se mere her",
+    "testimonials_title": "Det siger vores samarbejdspartnere",
+    "testimonials": [
+      {
+        "quote": "At arbejde sammen med Clarity Marketing har været en fantastisk oplevelse. De har transformeret vores hjemmeside og styrket vores synlighed gennem SEO, Google Ads og sociale medier, hvilket har skabt en platform, der afspejler vores mission og brand langt bedre. Siden samarbejdets start har vi oplevet en markant stigning i bookingforespørgsler og fået over 100 nye leads gennem hjemmesiden. Kan varmt anbefales.",
+        "name": "Morten",
+        "role": "Ejer af Sams Indeklima"
+      },
+      {
+        "quote": "Vi havde brug for en samarbejdspartner, der kunne forstå vores brand og omsætte det til konkrete resultater online. Clarity Marketing leverede på både strategi, hjemmeside og annoncering. Vi har siden oplevet flere bookinger og langt bedre performance på vores marketing.",
+        "name": "Neel Thapar",
+        "role": "Iværksætter"
+      },
+      {
+        "quote": "Fra første møde følte vi os i trygge hænder. Clarity Marketing har været utrolig professionelle gennem hele processen og har hjulpet os med både branding, annoncering og hjemmeside. Vi har fået flere leads, bedre synlighed og en langt mere moderne online profil.",
+        "name": "Jane Hansen",
+        "role": "Ejer af Ink Studio"
+      }
+    ],
+    "bottom_cta_title": "Tag det første skridt mod din succes i dag.",
+    "bottom_cta_btn": "Book en samtale"
+  },
+  "service": {
+    "title": "Service — Clarity Marketing",
+    "description": "Udforsk vores services: Social Media Marketing, Hjemmeside & SEO, Google Ads og Generative Engine Optimization.",
+    "eyebrow": "Vores Services",
+    "hero_title": "Udforsk vores services",
+    "hero_p": "Til ambitiøse brands, der ønsker at styrke deres tilstedeværelse, skabe en stærkere position i branchen og vækste med marketing, der afspejler virksomhedens vision, kvalitet og professionalisme.",
+    "blocks": [
+      {
+        "num": "01",
+        "title": "Social Media Marketing",
+        "desc": ["Opbyg en stærk digital tilstedeværelse, der positionerer dit brand som en troværdig autoritet i din branche.", "Vi udvikler strategiske social media-systemer, der øger synligheden, styrker brandets troværdighed og skaber meningsfuld vækst i målgruppen på platforme som LinkedIn, Instagram, Facebook og TikTok."],
+        "list_label": "Services inkluderer",
+        "list": ["Contentplanlægning & kampagneudvikling", "Copywriting & brand messaging", "Grafisk design & kreativ retning", "Redigering af short-form video & reels", "Community management & engagement", "Analyse & performance-rapportering"]
+      },
+      {
+        "num": "02",
+        "title": "Hjemmeside & SEO",
+        "desc": ["Skab en stærk digital platform, der gør din virksomhed synlig, troværdig og nem at finde online.", "Vi udvikler moderne hjemmesider og strategiske SEO-løsninger, der kombinerer design, brugeroplevelse og performance for at tiltrække de rigtige kunder og skabe langsigtet vækst."],
+        "list_label": "Services inkluderer",
+        "list": ["Webdesign & udvikling", "Responsive hjemmesider & landing pages", "UI/UX-design", "SEO-strategi & søgeordsanalyse", "On-page & teknisk SEO", "CMS-løsninger (WordPress & Shopify)", "Analyse, tracking & performance-rapportering"],
+        "featured": {
+          "stat": "100+",
+          "label": "kvalificerede leads",
+          "quote": "Siden vi gik live har vi oplevet en markant stigning i bookingforespørgsler.",
+          "person": "Morten, Ejer af Sams Indeklima"
+        }
+      },
+      {
+        "num": "03",
+        "title": "Google Ads",
+        "desc": ["Skab målbare resultater med strategiske Google Ads-kampagner, der øger synligheden, genererer kvalificerede leads og maksimerer dit annoncebudget.", "Vi udvikler datadrevne annonceringsstrategier med fokus på performance, konverteringer og vækst, så din virksomhed bliver fundet af de rigtige kunder på det rigtige tidspunkt."],
+        "list_label": "Services inkluderer",
+        "list": ["Google Ads-strategi & kampagneopsætning", "Søgeordsanalyse & målretning", "Search, Display & YouTube Ads", "Remarketing-kampagner", "Annoncecopy & kreativ udvikling", "Konverteringssporing & tracking", "Landing page-optimering", "Budgetstyring & budstrategier", "Analyse, performance & rapportering"]
+      },
+      {
+        "num": "04",
+        "title": "Generative Engine Optimization",
+        "desc": ["Vi hjælper virksomheder med at optimere deres digitale tilstedeværelse, så deres brand og indhold bliver fundet, forstået og fremhævet af AI-platforme som ChatGPT, Google SGE, Gemini og andre generative søgemaskiner."],
+        "list_label": "Services inkluderer",
+        "list": ["GEO-strategi & AI-synlighed", "Optimering af content til AI-søgninger", "Strukturering af website-content & semantik", "Thought leadership & autoritetsopbygning", "SEO & GEO-contentproduktion", "Optimering af FAQ'er & knowledge content", "Brand mentions & digital autoritet", "Analyse af AI-søgeresultater & synlighed", "Løbende GEO-optimering & rådgivning"]
+      }
+    ],
+    "values_title": "Kerneværdier & fordele",
+    "values": [
+      { "title": "En samarbejdspartner med fokus på vækst", "body": "Vi fungerer som en forlængelse af jeres team og bidrager med strategisk rådgivning, kreativ retning og løbende sparring, der understøtter langsigtet vækst og udvikling af virksomheden.", "icon_growth": true },
+      { "title": "Moderne systemer & innovation", "body": "Vi anvender moderne AI-understøttede værktøjer og effektive workflows for at optimere processer, skabe hurtigere indsigter og hjælpe virksomheder med at træffe mere datadrevne og strategiske marketingbeslutninger samtidig med at de forbliver relevante i en digital branche i konstant udvikling.", "icon_spark": true },
+      { "title": "Kreativitet med et formål", "body": "Vi skaber marketing, der ikke kun er visuelt stærkt, men også strategisk udviklet til at styrke jeres brand, opbygge troværdighed, tiltrække den rette målgruppe og skabe langsigtet vækst på tværs af digitale platforme.", "icon_target": true }
+    ],
+    "faq_title": "Dine spørgsmål – besvaret",
+    "faq": [
+      { "q": "Hvordan kommer vi i gang?", "a": ["Det første skridt er en samtale. Del et par oplysninger via vores kontaktside, så følger vi op for at planlægge et indledende møde. Her gennemgår vi jeres mål, fortæller mere om vores arbejdsproces og giver et indblik i, hvordan et samarbejde kunne se ud."] },
+      { "q": "Hvad hvis jeg allerede har et brand, en hjemmeside eller eksisterende marketing?", "a": ["Det har de fleste af vores kunder og det er ofte et stærkt udgangspunkt. Vi bygger videre på det, der allerede fungerer, optimerer det, der kan forbedres, og samler det hele i en sammenhængende strategi med fokus på vækst.", "Uanset om I har brug for en komplet opgradering eller ønsker at tilføje et strategisk lag til jeres eksisterende setup, tilpasser vi vores tilgang, så intet værdifuldt går tabt i processen."] },
+      { "q": "Hvor lang tid tager det at se resultater?", "a": ["De fleste kunder oplever mærkbare resultater inden for de første 30 dage typisk i form af øget synlighed, engagement og flere henvendelser.", "Langsigtede resultater som stabil leadgenerering, stærkere brandpositionering og kontinuerlig vækst i målgruppen udvikler sig som regel over 90 dage eller mere, i takt med at strategier, content og tillid hos målgruppen opbygges.", "Vi er transparente omkring, hvad der er realistisk fra starten, og gennem løbende rapportering holder vi jer opdateret på udviklingen og resultaterne gennem hele samarbejdet."] },
+      { "q": "Hvordan foregår onboarding-processen?", "a": ["Vi har designet vores onboarding-proces, så den føles struktureret, samarbejdsorienteret og overskuelig fra starten:"], "list": ["<strong>Indledende møde:</strong> Vi afstemmer jeres mål, målgruppe og nuværende positionering.", "<strong>Tilbud & opstart:</strong> Når samarbejdet er godkendt, fastlægger vi tidsplaner, leverancer og kommunikationsflow.", "<strong>Analyse & strategi:</strong> Vi gennemgår, hvad der fungerer, hvad der mangler, og hvor de største muligheder ligger.", "<strong>Eksekvering:</strong> Strategien omsættes til konkrete handlinger på tværs af de aftalte services.", "<strong>Løbende rapportering & optimering:</strong> Vi deler løbende resultater og indsigt samt optimerer ud fra data og performance."], "a_after": ["Hos os ved I altid, hvad der sker, hvad næste skridt er, og hvilken værdi indsatsen skaber."] },
+      { "q": "Hvordan adskiller vi os fra andre bureauer?", "a": ["Vi er den strategiske samarbejdspartner, der arbejder tæt sammen med jer. Clarity Marketing kombinerer kreativitet og strategisk forståelse, formet gennem erfaring på tværs af brancher fra ambitiøse startups til globale virksomheder.", "Vi researcher og anvender løbende de mest moderne AI-værktøjer for at sikre, at jeres marketingstrategi er på forkant med udviklingen, samtidig med at vi bringer den menneskelige dømmekraft, kreativitet og forståelse, som teknologi alene ikke kan levere.", "Resultatet er en samarbejdspartner, der bygger sammen med jer, rådgiver jer og hjælper med at skabe et brand, der skiller sig ud og bliver husket."] }
+    ],
+    "cta_eyebrow": "Klar til at komme i gang?",
+    "cta_title": "Lad os bygge det,<br />der får jer bemærket.",
+    "cta_primary": "Book en samtale",
+    "cta_secondary": "Se vores arbejde"
+  },
+  "contact": {
+    "title": "Kontakt os — Clarity Marketing",
+    "description": "Book en samtale med Clarity Marketing. Fortæl os om jeres virksomhed og behov.",
+    "hero_title": "Book en samtale",
+    "hero_p": "Fortæl os lidt om din virksomhed og jeres behov, så kontakter vi jer hurtigst muligt for en uforpligtende samtale.",
+    "calendly_title": "Vælg et tidspunkt der passer",
+    "calendly_p": "Book direkte i kalenderen – uforpligtende og gratis.",
+    "form_title": "Eller send os en besked",
+    "form_p": "Foretrækker du at skrive først? Udfyld formularen, så vender vi tilbage hurtigst muligt.",
+    "form": {
+      "name": "Navn",
+      "company": "Virksomhedsnavn",
+      "email": "Email",
+      "website": "Hjemmeside",
+      "message": "Hvad ønsker du at forbedre / scale?",
+      "required": "Påkrævet",
+      "submit": "Send"
+    }
+  },
+  "work": {
+    "title": "Tidligere Arbejde — Clarity Marketing",
+    "description": "Cases og tidligere arbejde fra Clarity Marketing — kommer snart.",
+    "eyebrow": "Kommer snart",
+    "hero_title": "Vores cases er på vej",
+    "hero_p": "Vi samler i øjeblikket de første cases og resultater fra vores samarbejder. Indtil videre kan I læse mere om vores arbejde med Sams Indeklima på forsiden.",
+    "cta_primary": "Se case på forsiden",
+    "cta_secondary": "Book en samtale"
+  }
+}

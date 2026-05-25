@@ -1,0 +1,198 @@
+{
+  "html_lang": "en",
+  "lang_toggle_label": "🇩🇰 Dansk",
+  "nav": {
+    "home": "Home",
+    "service": "Service",
+    "contact": "Contact us",
+    "work": "Previous Work"
+  },
+  "marquee": ["Be seen", "Be remembered", "Scale growth"],
+  "cookie": {
+    "text": "We use cookies to improve your experience on this site.",
+    "accept": "Accept",
+    "decline": "Decline",
+    "policy_label": "Learn more",
+    "policy_url": "#"
+  },
+  "cta_popup": {
+    "eyebrow": "Ready to grow?",
+    "title": "Book a free consultation",
+    "p": "Pick a time that works for you — free and no commitment.",
+    "close_label": "Close"
+  },
+  "footer": {
+    "brand": "Clarity Marketing",
+    "hours_title": "Opening hours",
+    "hours": [
+      { "day": "Monday – Thursday", "time": "8 – 18" },
+      { "day": "Friday", "time": "8 – 16" },
+      { "day": "Weekend", "time": "Closed" }
+    ],
+    "follow_title": "Follow us",
+    "email": "Kontakt@claritymarketing.dk",
+    "phone_label": "Tel",
+    "phone": "+45 26 85 40 06",
+    "tagline": "Be seen. Be remembered. Scale growth.",
+    "rights": "All rights reserved.",
+    "made_in": "Designed in Copenhagen"
+  },
+  "home": {
+    "title": "Clarity Marketing — Be seen. Be remembered. Scale growth.",
+    "description": "Clarity Marketing is a strategic partner that helps ambitious brands grow through modern marketing, SEO, Google Ads and AI-powered tools.",
+    "hero_line_1": "Be seen",
+    "hero_line_2": "Be remembered",
+    "hero_line_3": "Scale growth",
+    "hero_tagline": "We help grow your brand through high-performing digital marketing",
+    "hero_cta": "Book an appointment",
+    "stats_heading": "Our previous work",
+    "stats": [
+      { "num": 38, "label": "Revenue growth" },
+      { "num": 68, "label": "Qualified<br />inbound leads" },
+      { "num": 40, "label": "More monthly<br />inquiries" }
+    ],
+    "glass_title_lead": "Create",
+    "glass_title_rest": "sustainable growth and complete transparency with Clarity Marketing",
+    "glass_p1": "At Clarity Marketing, we believe the best digital growth is built through innovation, experience, and close collaboration. We simplify complexity so you can make better decisions and get more value from your marketing budget.",
+    "glass_p2": "Our focus is not just on clicks and traffic, but on measurable results, stronger ROI, and strategic growth that creates real business value.",
+    "glass_cta": "Read more",
+    "projects_title": "Latest projects",
+    "case_title": "How 100+ qualified leads created growth for Sams Indeklima across their digital platforms.",
+    "case_quote": "Working with Clarity Marketing has been a fantastic experience. They transformed our website and strengthened our visibility through SEO, Google Ads, and social media, creating a platform that reflects our mission and brand far better. Since the beginning of our collaboration, we have experienced a significant increase in booking inquiries and generated over 100 new leads through the website.",
+    "case_person_name": "Morten Nielsen",
+    "case_person_role": "CEO of Sams Indeklima",
+    "services_title": "How we create growth for brands",
+    "services": [
+      {
+        "title": "Website and SEO",
+        "body": "We develop modern, conversion-optimized websites and strategic SEO solutions that help businesses get discovered on Google and turn visitors into customers. Our focus is not just on design, but on visibility, performance, and measurable growth.",
+        "icon": "icon-web.jpg"
+      },
+      {
+        "title": "Social Media Marketing",
+        "body": "We help businesses build strong professional engagement and a brand people remember.",
+        "icon": "icon-social.jpg"
+      },
+      {
+        "title": "Google Ads",
+        "body": "We create data-driven Google Ads campaigns focused on qualified leads, more bookings, and higher ROI. Through continuous optimization, we ensure your advertising budget is invested where it creates the greatest value.",
+        "icon": "icon-ads.jpg"
+      },
+      {
+        "title": "Generative Engine Optimization",
+        "body": "We work with GEO (Generative Engine Optimization) to ensure your business is visible in the future of AI-driven search. By optimizing content, structure, and authority, we help businesses get discovered across both search engines and AI platforms.",
+        "icon": "icon-geo.jpg"
+      }
+    ],
+    "services_cta": "See more",
+    "testimonials_title": "What our partners say",
+    "testimonials": [
+      {
+        "quote": "Working with Clarity Marketing has been a fantastic experience. They transformed our website and strengthened our visibility through SEO, Google Ads, and social media, creating a platform that reflects our mission and brand far better. Since the beginning of our collaboration, we have experienced a significant increase in booking inquiries and generated over 100 new leads through the website. Highly recommended.",
+        "name": "Morten",
+        "role": "Owner of Sams Indeklima"
+      },
+      {
+        "quote": "We needed a partner who could understand our brand and translate it into concrete results online. Clarity Marketing delivered on strategy, website, and advertising. We've since experienced more bookings and far better marketing performance.",
+        "name": "Neel Thapar",
+        "role": "Entrepreneur"
+      },
+      {
+        "quote": "From the first meeting we felt in safe hands. Clarity Marketing has been incredibly professional throughout the entire process and has helped us with branding, advertising, and the website. We've gained more leads, better visibility, and a far more modern online profile.",
+        "name": "Jane Hansen",
+        "role": "Owner of Ink Studio"
+      }
+    ],
+    "bottom_cta_title": "Take the first step toward your success today.",
+    "bottom_cta_btn": "Book a consultation"
+  },
+  "service": {
+    "title": "Service — Clarity Marketing",
+    "description": "Explore our services: Social Media Marketing, Website & SEO, Google Ads and Generative Engine Optimization.",
+    "eyebrow": "Our Services",
+    "hero_title": "Explore Our Services",
+    "hero_p": "For ambitious brands looking to strengthen their digital presence, build a stronger position within their industry, and grow through marketing that reflects their vision, quality, and professionalism.",
+    "blocks": [
+      {
+        "num": "01",
+        "title": "Social Media Marketing",
+        "desc": ["Build a strong digital presence that positions your brand as a trusted authority within your industry.", "We develop strategic social media systems that increase visibility, strengthen brand credibility, and drive meaningful audience growth across platforms such as LinkedIn, Instagram, Facebook, and TikTok."],
+        "list_label": "Services include",
+        "list": ["Content planning & campaign development", "Copywriting & brand messaging", "Graphic design & creative direction", "Short-form video editing & reels creation", "Community management & engagement", "Analytics & performance reporting"]
+      },
+      {
+        "num": "02",
+        "title": "Website & SEO",
+        "desc": ["Create a strong digital platform that makes your business visible, credible, and easy to find online.", "We develop modern websites and strategic SEO solutions that combine design, user experience, and performance to attract the right customers and drive long-term growth."],
+        "list_label": "Services include",
+        "list": ["Web design & development", "Responsive websites & landing pages", "UI/UX design", "SEO strategy & keyword research", "On-page & technical SEO", "CMS solutions (WordPress & Shopify)", "Analytics, tracking & performance reporting"],
+        "featured": {
+          "stat": "100+",
+          "label": "qualified leads",
+          "quote": "Since we went live we've seen a significant increase in booking inquiries.",
+          "person": "Morten, Owner of Sams Indeklima"
+        }
+      },
+      {
+        "num": "03",
+        "title": "Google Ads",
+        "desc": ["Create measurable results with strategic Google Ads campaigns that increase visibility, generate qualified leads, and maximize your advertising budget.", "We develop data-driven advertising strategies focused on performance, conversions, and growth — ensuring your business is found by the right customers at the right time."],
+        "list_label": "Services include",
+        "list": ["Google Ads strategy & campaign setup", "Keyword research & targeting", "Search, Display & YouTube Ads", "Remarketing campaigns", "Ad copy & creative development", "Conversion tracking & analytics", "Landing page optimization", "Budget management & bidding strategies", "Analytics, performance & reporting"]
+      },
+      {
+        "num": "04",
+        "title": "Generative Engine Optimization",
+        "desc": ["We help businesses optimize their digital presence so their brand and content are discovered, understood, and highlighted by AI platforms such as ChatGPT, Google SGE, Gemini, and other generative search engines."],
+        "list_label": "Services include",
+        "list": ["GEO strategy & AI visibility", "Content optimization for AI-driven search results", "Website content structuring & semantic optimization", "Thought leadership & authority building", "SEO & GEO content production", "FAQ & knowledge content optimization", "Brand mentions & digital authority", "AI search result analysis & visibility tracking", "Ongoing GEO optimization & consulting"]
+      }
+    ],
+    "values_title": "Core Values & Benefits",
+    "values": [
+      { "title": "A growth-focused partner", "body": "We act as an extension of your team, contributing strategic advice, creative direction, and ongoing collaboration that supports long-term growth and development of the business.", "icon_growth": true },
+      { "title": "Modern systems & innovation", "body": "We use modern AI-powered tools and efficient workflows to optimize processes, generate faster insights, and help businesses make more data-driven and strategic marketing decisions — while staying relevant in a constantly evolving digital landscape.", "icon_spark": true },
+      { "title": "Creativity with Purpose", "body": "We create marketing that is not only visually compelling, but also strategically developed to strengthen your brand, build credibility, attract the right audience, and drive long-term growth across digital platforms.", "icon_target": true }
+    ],
+    "faq_title": "Your Questions — Answered",
+    "faq": [
+      { "q": "How do we get started?", "a": ["The first step is a conversation. Share a few details via our contact page, and we'll follow up to schedule an initial meeting. There we'll review your goals, tell you more about our process, and give you insight into what a collaboration could look like."] },
+      { "q": "What if I already have a brand, a website, or existing marketing?", "a": ["Most of our clients do — and it's often a strong starting point. We build on what already works, optimize what can be improved, and bring it all together in a cohesive growth-focused strategy.", "Whether you need a complete upgrade or want to add a strategic layer to your existing setup, we adapt our approach so nothing valuable is lost in the process."] },
+      { "q": "How long does it take to see results?", "a": ["Most clients see noticeable results within the first 30 days, typically in the form of increased visibility, engagement, and more inquiries.", "Long-term results — such as stable lead generation, stronger brand positioning, and continuous audience growth — usually develop over 90 days or more, as strategies, content, and audience trust are built.", "We are transparent about what is realistic from the start, and through ongoing reporting we keep you updated on progress and results throughout the collaboration."] },
+      { "q": "How does the onboarding process work?", "a": ["We have designed our onboarding process to feel structured, collaborative, and clear from the start:"], "list": ["<strong>Initial meeting:</strong> We align on your goals, audience, and current positioning.", "<strong>Proposal & kickoff:</strong> Once the collaboration is approved, we set timelines, deliverables, and communication flow.", "<strong>Analysis & strategy:</strong> We review what is working, what is missing, and where the biggest opportunities are.", "<strong>Execution:</strong> The strategy is translated into concrete actions across the agreed services.", "<strong>Ongoing reporting & optimization:</strong> We share results and insights continuously, and optimize based on data and performance."], "a_after": ["With us, you always know what's happening, what's next, and what value the work is creating."] },
+      { "q": "How are we different from other agencies?", "a": ["We are the strategic partner that works closely alongside you. Clarity Marketing combines creativity and strategic understanding, shaped by experience across industries — from ambitious startups to global businesses.", "We continuously research and apply the most modern AI tools to ensure your marketing strategy stays ahead of the curve, while bringing the human judgment, creativity, and understanding that technology alone cannot deliver.", "The result is a partner that builds with you, advises you, and helps create a brand that stands out and is remembered."] }
+    ],
+    "cta_eyebrow": "Ready to get started?",
+    "cta_title": "Let's build something<br />that gets you noticed.",
+    "cta_primary": "Book a consultation",
+    "cta_secondary": "See our work"
+  },
+  "contact": {
+    "title": "Contact us — Clarity Marketing",
+    "description": "Book a consultation with Clarity Marketing. Tell us about your business and your needs.",
+    "hero_title": "Book a consultation",
+    "hero_p": "Tell us a bit about your business and your needs, and we'll get back to you as soon as possible for a no-obligation consultation.",
+    "calendly_title": "Pick a time that works for you",
+    "calendly_p": "Book directly in the calendar — free and no commitment.",
+    "form_title": "Or send us a message",
+    "form_p": "Prefer to write first? Fill out the form and we'll get back to you as soon as possible.",
+    "form": {
+      "name": "Name",
+      "company": "Company Name",
+      "email": "Email",
+      "website": "Website",
+      "message": "What would you like to improve or scale?",
+      "required": "Required",
+      "submit": "Send"
+    }
+  },
+  "work": {
+    "title": "Previous Work — Clarity Marketing",
+    "description": "Cases and previous work from Clarity Marketing — coming soon.",
+    "eyebrow": "Coming soon",
+    "hero_title": "Our cases are on the way",
+    "hero_p": "We are currently gathering the first cases and results from our collaborations. In the meantime, you can read more about our work with Sams Indeklima on the home page.",
+    "cta_primary": "See case on home page",
+    "cta_secondary": "Book a consultation"
+  }
+}
