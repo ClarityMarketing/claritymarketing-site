@@ -40,7 +40,8 @@ const PAGES = [
   { template: 'index',   da: 'index.html',             en: 'en/index.html',         active: 'home' },
   { template: 'service', da: 'service.html',           en: 'en/service.html',       active: 'service' },
   { template: 'contact', da: 'kontakt-os.html',        en: 'en/contact-us.html',    active: 'contact' },
-  { template: 'work',    da: 'tidligere-arbejde.html', en: 'en/previous-work.html', active: 'work' }
+  { template: 'work',    da: 'tidligere-arbejde.html', en: 'en/previous-work.html', active: 'work' },
+  { template: '404',     da: '404.html',               en: 'en/404.html',           active: '' }
 ];
 
 function urlsFor(lang, page) {

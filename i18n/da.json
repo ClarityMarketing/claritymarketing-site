@@ -200,5 +200,14 @@
     "hero_p": "Vi samler i øjeblikket de første cases og resultater fra vores samarbejder. Indtil videre kan I læse mere om vores arbejde med Sams Indeklima på forsiden.",
     "cta_primary": "Se case på forsiden",
     "cta_secondary": "Book en samtale"
+  },
+  "notfound": {
+    "title": "Siden findes ikke — Clarity Marketing",
+    "description": "Vi kunne ikke finde den side, du leder efter.",
+    "eyebrow": "Fejl 404",
+    "hero_title": "Siden findes ikke",
+    "hero_p": "Linket er måske forældet, eller adressen er skrevet forkert. Tag et kig på forsiden, eller skriv til os — vi hjælper dig gerne videre.",
+    "cta_primary": "Tilbage til forsiden",
+    "cta_secondary": "Kontakt os"
   }
 }

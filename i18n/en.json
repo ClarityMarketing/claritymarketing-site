@@ -200,5 +200,14 @@
     "hero_p": "We are currently gathering the first cases and results from our collaborations. In the meantime, you can read more about our work with Sams Indeklima on the home page.",
     "cta_primary": "See case on home page",
     "cta_secondary": "Book a consultation"
+  },
+  "notfound": {
+    "title": "Page not found — Clarity Marketing",
+    "description": "We couldn't find the page you were looking for.",
+    "eyebrow": "Error 404",
+    "hero_title": "Page not found",
+    "hero_p": "The link may be outdated, or the URL was typed incorrectly. Head back to the home page, or get in touch — we're happy to help.",
+    "cta_primary": "Back to home",
+    "cta_secondary": "Contact us"
   }
 }
