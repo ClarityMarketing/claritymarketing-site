@@ -8,7 +8,10 @@
       <p class="cta-popup__p">{{t.cta_popup.p}}</p>
     </div>
 
-    <form class="cta-popup__form" id="ctaPopupForm" action="https://formspree.io/f/REPLACE_WITH_FORMSPREE_ID" method="POST">
+    <form class="cta-popup__form" id="ctaPopupForm" action="https://formsubmit.co/ajax/ella@claritymarketing.dk" method="POST">
+      <input type="hidden" name="_subject" value="Ny besked fra claritymarketing.dk" />
+      <input type="hidden" name="_template" value="table" />
+      <input type="hidden" name="_captcha" value="false" />
       <input type="text" name="name" placeholder="{{t.cta_popup.form_name}}" required />
       <input type="email" name="email" placeholder="{{t.cta_popup.form_email}}" required />
       <textarea name="message" placeholder="{{t.cta_popup.form_message}}" rows="3" required></textarea>
