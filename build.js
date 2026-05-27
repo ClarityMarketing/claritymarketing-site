@@ -26,7 +26,7 @@ const ROOT = __dirname;
 const TEMPLATES = path.join(ROOT, 'templates');
 const I18N = path.join(ROOT, 'i18n');
 const DIST = path.join(ROOT, 'dist');
-const STATIC_FILES = ['styles.css', 'script.js'];
+const STATIC_FILES = ['styles.css', 'script.js', '.htaccess'];
 const STATIC_DIRS = ['assets'];
 
 // Sanity CMS — public read API for testimonials (and future content types)

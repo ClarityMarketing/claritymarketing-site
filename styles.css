@@ -165,7 +165,8 @@ h1, h2, h3 { margin: 0; }
   position: relative;
   min-height: 88vh;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  padding-top: 20vh;
   overflow: hidden;
   background: var(--beige);
 }
@@ -187,7 +188,7 @@ h1, h2, h3 { margin: 0; }
 .hero-video__content {
   position: relative;
   z-index: 2;
-  padding: 0 56px 96px;
+  padding: 0 56px;
   max-width: var(--container);
   width: 100%;
   margin: 0 auto;
