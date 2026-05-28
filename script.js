@@ -93,7 +93,6 @@ document.querySelectorAll('.stats__num[data-count]').forEach((c) => {
     if (shown) return;
     shown = true;
     localStorage.setItem(KEY, '1');
-    loadCalendly();
     popup.hidden = false;
     requestAnimationFrame(() => popup.classList.add('is-in'));
     document.documentElement.style.overflow = 'hidden';
@@ -103,29 +102,6 @@ document.querySelectorAll('.stats__num[data-count]').forEach((c) => {
     document.documentElement.style.overflow = '';
     setTimeout(() => { popup.hidden = true; }, 350);
   };
-
-  function loadCalendly() {
-    const host = popup.querySelector('.cta-popup__calendly');
-    if (!host || host.dataset.loaded) return;
-    host.dataset.loaded = '1';
-    // Inject widget div
-    const widget = document.createElement('div');
-    widget.className = 'calendly-inline-widget';
-    widget.setAttribute('data-url', host.dataset.calendlyUrl);
-    host.appendChild(widget);
-    // Inject script + stylesheet once
-    if (!document.querySelector('script[data-calendly]')) {
-      const css = document.createElement('link');
-      css.rel = 'stylesheet';
-      css.href = 'https://assets.calendly.com/assets/external/widget.css';
-      document.head.appendChild(css);
-      const s = document.createElement('script');
-      s.src = 'https://assets.calendly.com/assets/external/widget.js';
-      s.async = true;
-      s.dataset.calendly = '1';
-      document.body.appendChild(s);
-    }
-  }
 
   // Timer trigger (9s after page load)
   setTimeout(open, 9000);
